@@ -1,0 +1,114 @@
+{%extends 'layout.html'%}
+
+<!--Titulo-->
+{%block title%}JOJOLAND{%endblock%}
+<!--BODY-->
+{%block body%}
+<div class="container-pove">
+  <h1 class="lionel">Bienvenid@ {{session.nombre}}</h1>
+  <h1 class="lionel">tu aventura comienza aqui</h1>
+  <a href="/comentarios">Deja tu opinión dando click aquí</a>
+</div>
+
+<body>
+  <!----About section start---->
+  <section class="about">
+    <div class="main">
+      <img
+        id="logo-juego"
+        src="{{url_for('static',filename='recursos/JOJOLAND-LOGO.png')}}"
+      />
+      <div class="about-text">
+        <h2>JOJOLAND</h2>
+        <h5>Desarrollado por<span> ERLAND Studios</span></h5>
+        <p>
+          JOJOLAND es un juego rpg inspirado en juegos clásicos como Zelda,
+          Pokemon y EarthBound.
+          <!--Salto-->
+          <br />
+          <br />
+          <br />
+
+          JOJOLAND es un mundo semi abierto de mucha acción y diversión en el
+          cual el jugador tendrá la libertad de explorar, derrotar enemigos y
+          conseguir tesoros para mejorar sus habilidades
+        </p>
+      </div>
+    </div>
+
+    <div class="cartas">
+      <div id="carta-1" class="card text-bg-dark mb-3" style="width: 18rem">
+        <img
+          id="anime1"
+          src="{{url_for('static',filename='recursos/img-carta1.jpg')}}"
+          class="card-img-top"
+          alt="jojos"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Adentraté en JOJOLAND</h5>
+          <p class="card-text">Aventura y horas de diversión te esperan</p>
+        </div>
+      </div>
+
+      <div id="carta-2" class="card text-bg-dark mb-3" style="width: 18rem">
+        <img
+          id="anime2"
+          src="{{url_for('static',filename='recursos/img-carta2.jpg')}}"
+          class="card-img-top"
+          alt="link click"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Habla con los NPC</h5>
+          <p class="card-text">
+            JOJOLAND está poblado de npc's amigables que te guiaran durante tu
+            aventura
+          </p>
+        </div>
+      </div>
+
+      <div id="carta-3" class="card text-bg-dark mb-3" style="width: 18rem">
+        <img
+          id="anime3"
+          src="{{url_for('static',filename='recursos/items.jpg')}}"
+          class="card-img-top"
+          alt="link click"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Items originales</h5>
+          <p class="card-text">Recupera tu vida con items únicos</p>
+        </div>
+      </div>
+
+      <div id="carta-4" class="card text-bg-dark mb-3" style="width: 18rem">
+        <img
+          id="anime4"
+          src="{{url_for('static',filename='recursos/skills.jpg')}}"
+          class="card-img-top"
+          alt="link click"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Mejora tus habilidades</h5>
+          <p class="card-text">
+            Puedes mejorar y subir tus habilidades completando misiones
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------footer start--------->
+  <footer>
+    <p>ERLAND</p>
+
+    <div class="social">
+      <a href="https://www.facebook.com/ErickJeronimolandero/"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a href="https://www.instagram.com/ericklandero99/"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a href="https://github.com/LANDEROWSKI"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+</body>
+{%endblock%}

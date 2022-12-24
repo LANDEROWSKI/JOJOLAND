@@ -1,0 +1,74 @@
+{%extends 'layout.html'%}
+
+<!--Titulo-->
+{%block title%}JOJOLAND{%endblock%}
+<!--BODY-->
+{%block body%}
+<main class="form-signin w-100 m-auto">
+  <form method="post" action="/registro">
+    <img
+      class="mb-4"
+      src="https://laverdadnoticias.com/__export/1666210054760/sites/laverdad/img/2022/10/19/el_anime_bocchi_the_rock_censura_pechos_de_sus_waifus_y_los_fans_se_enojan.jpg_2122907939.jpg"
+      alt=""
+      width="72"
+      height="57"
+    />
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <!--Nombre-->
+    <div class="form-floating">
+      <input
+        name="Username"
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="Username"
+      />
+      <label for="floatingInput">Usuario</label>
+    </div>
+
+    <div class="form-floating">
+      <input
+        name="email"
+        type="email"
+        class="form-control"
+        id="floatingInput"
+        placeholder="name@example.com"
+      />
+      <label for="floatingInput">Correo Electrónico</label>
+    </div>
+    <div class="form-floating">
+      <input
+        name="password"
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        placeholder="Password"
+      />
+      <label for="floatingPassword">Contraseña</label>
+    </div>
+
+    <div class="form-floating">
+      <input
+        name="password2"
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        placeholder="Confirmar"
+      />
+      <label for="floatingPassword">Confirmar Contraseña</label>
+    </div>
+
+    <button id="pochita" class="w-100 btn btn-lg btn-primary" type="submit">
+      Registrarse
+    </button>
+    <p class="text-center">
+      <small>Ya estás registrado? <a href="/login">Inicia Sesión</a> </small>
+    </p>
+    <p class="mt-5 mb-3 text-muted text-center">
+      &copy; Copyright ERLAND Studios
+    </p>
+  </form>
+</main>
+
+{%endblock%}
